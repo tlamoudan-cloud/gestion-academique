@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { min-height: 100%; margin: 0; }
+body { -webkit-tap-highlight-color: transparent; }
+
+        
+        :root {
+          --bg-page: #E7E9ED;
+          --bg-card: #FFFFFF;
+          --ink: #14213D;
+          --ink-soft: #26355A;
+          --gold: #C6A05C;
+          --gold-dark: #94742E;
+          --crimson: #8C2F39;
+          --sage: #4F6F52;
+          --text-primary: #1A1F2B;
+          --text-muted: #626B7E;
+          --border: #DBDEE5;
+        }
+        .font-display { font-family: 'Fraunces', serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'IBM Plex Mono', monospace; }
+        .bg-page { background: var(--bg-page); }
+        .bg-card { background: var(--bg-card); }
+        .bg-ink { background: var(--ink); }
+        .bg-ink-soft { background: var(--ink-soft); }
+        .text-ink { color: var(--ink); }
+        .text-gold { color: var(--gold); }
+        .text-muted { color: var(--text-muted); }
+        .border-hair { border: 1px solid var(--border); }
+        .ledger-row { border-bottom: 1px solid var(--border); }
+        .ledger-row:last-child { border-bottom: none; }
+        .nav-item { transition: background 0.15s ease, color 0.15s ease; }
+        .nav-item:hover { background: rgba(255,255,255,0.06); }
+        .nav-item.active { background: rgba(198,160,92,0.16); color: var(--gold); }
+        input[type=text], input[type=email], input[type=tel], input[type=number], select {
+          font-family: 'Inter', sans-serif;
+        }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-thumb { background: #C9CDD6; border-radius: 4px; }
+      
